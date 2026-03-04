@@ -1,6 +1,37 @@
+@use '../../../../shared' as *; 
+
+// .hero-container{
+    
+// }
+
 .hero-bgn {
     width: 100vw;
     max-height: 100vh;
     z-index: -2;
     box-sizing: border-box;
+}
+
+.view-more-btn{
+    @extend %btn-base;
+    @extend %btn-text;
+    cursor: pointer;
+    height: 50px !important;
+    position: absolute;
+    top:90%;
+    left: clamp(15px, 5vw, 50px);
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;    
+    transition: all 0.3 ease-in;
+}
+
+.view-more-btn:hover{
+    scale:110%;
+}
+
+a{
+    margin-left:15px;
+    font-size:15px;
 }

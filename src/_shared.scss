@@ -1,0 +1,31 @@
+
+// base button placeholder; extend in component styles instead of
+// using a generic utility class that leaks globally
+// Global declarations
+$btn-color: rgba(255, 255, 255, 0.402);
+$btn-height: 60px;
+$btn-radius:50px;
+
+// Text
+$btn-txt-color: rgb(244, 244, 244);
+$btn-txt-hover: rgb(29, 68, 128);   
+
+%btn-base {
+    background-color: $btn-color;
+    height: $btn-height;
+    border-radius: $btn-radius;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+%btn-text{
+    color: $btn-txt-color;  
+    font-size: 20px; 
+    font-weight: 700;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}

@@ -1,17 +1,15 @@
-$header-color: rgba(255, 255, 255, 0.234);
-$header-height: 60px;
-// $header-menu-width: ;
-// $header-menu-height: ;
+// Declarations in style.scss
+@use '../../../shared' as *; 
 
 .header {
     position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
-    height: $header-height;
+    height: $btn-height;
     z-index: 1000;
     // background-color: red; 
-    display: flex;
+    display: flex; 
     flex-direction: row;
     align-items: left;
     justify-content:flex-start; 
@@ -19,25 +17,17 @@ $header-height: 60px;
 }
 
 .home-link {
-    background-color: $header-color;
-    border-radius: 50px;
+    @extend %btn-base;
     width: clamp(70px, 7vw, 100px); 
-    height: $header-height;
     aspect-ratio: 1; 
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+    cursor: pointer;
 }
 
 nav {
-    margin-left: 25px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
+    @extend %btn-base;
     gap: 50px;
+    
+    margin-left: 25px;
     width: auto;
     max-width: 100%;
     
@@ -45,21 +35,11 @@ nav {
     padding-bottom: 15px;
     padding-left: 40px;
     padding-right: 40px;
-    
-    
-    background-color: $header-color;
-    border-radius: 150px; 
-    
-    // > a:hover {
-         
-    // }
 }
     
 a {
-    color: rgb(244, 244, 244);  
-    font-size: 20px; 
-    font-weight: 700;
-    list-style-type: none;
-    text-decoration: none;
-    transition: transform 0.2s ease;
+    @extend %btn-text;
 } 
+a:hover {
+    color: $btn-txt-hover;  
+}
