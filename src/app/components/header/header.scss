@@ -21,6 +21,13 @@
     width: clamp(70px, 7vw, 100px); 
     aspect-ratio: 1; 
     cursor: pointer;
+    
+    i {
+        transition: all 0.2s ease; 
+    }
+    i:hover {
+        color: $btn-txt-hover !important;      
+    }
 }
 
 nav {
