@@ -1,0 +1,13 @@
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+    color: gainsboro !important; 
+    background-color: rgb(14, 16, 30);  
+    height: clamp(100px, 20vh, 300px);
+    width: 100%
+}
+p {
+    margin: 150px;
+}
