@@ -1,0 +1,13 @@
+.arrow{
+    background:none;
+    border:none;
+    list-style-type: none;
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform-style: preserve-3d;
+}
