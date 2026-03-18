@@ -18,6 +18,7 @@
 
 .home-link {
     @extend %btn-base;
+    box-shadow: 0px 0px 20px 15px rgba(0,0,0,0.1);
     width: clamp(70px, 4vw, 100px); 
     aspect-ratio: 1; 
     cursor: pointer;
@@ -33,6 +34,7 @@
 nav {
     @extend %btn-base;
     gap: 50px;
+    box-shadow: 0px 0px 20px 15px rgba(0,0,0,0.1);
     
     margin-left: 25px;
     width: auto;

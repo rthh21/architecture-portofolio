@@ -14,10 +14,13 @@ $btn-txt-color: rgb(244, 244, 244);
 $btn-txt-hover: rgb(29, 68, 128);   
 
 %glass-template {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.6px);
-    -webkit-backdrop-filter: blur(5.6px); 
+    // // background: rgba(255, 255, 255, 0.15);
+    // // backdrop-filter: blur(5.6px);
+    // // -webkit-backdrop-filter: blur(5.6px); 
+    background: rgba(45, 45, 45, 0.398);
+    border-radius: 16px; 
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
 }
 
 %btn-base {

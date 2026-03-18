@@ -16,8 +16,8 @@ export class App {
   isScrollingDown = false;
 
   @HostListener('window:scroll', []) onWindowScroll() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    this.isScrollingDown = currentScroll > window.innerHeight;
+    const currentScroll = window.scrollY;
+    this.isScrollingDown = currentScroll > 0;
   }
 
   gotoTop() {

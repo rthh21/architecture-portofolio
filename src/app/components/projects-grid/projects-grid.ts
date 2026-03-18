@@ -18,9 +18,4 @@ export class ProjectsGrid implements OnInit {
   ngOnInit(): void {
     this.myProjects = this.projectService.getProjects();
   }
-
-  createNew(): void {
-    const newProj: Project = { id: 2, name: 'My Second Project' };
-    this.projectService.addProject(newProj);
-  }
 }

@@ -6,11 +6,13 @@ import { Project } from '../models/project';
 })
 
 export class ProjectService {
+  
+  private thumbnailUrl = '/home-project-tumbnails/project-';
   private projects: Project[] = [
-    { id: 1, name: 'My Project' },
-    { id: 2, name: 'My Project 2' },
-    { id: 3, name: 'My Project 3' },
-    { id: 4, name: 'My Project 4' }
+    { id: 1, name: 'My Project', img: this.thumbnailUrl + '1.jpg'},
+    { id: 2, name: 'My Project 2', img: this.thumbnailUrl + '2.jpg' },
+    { id: 3, name: 'My Project 3', img: this.thumbnailUrl + '3.jpg' },
+    { id: 4, name: 'My Project 4', img: this.thumbnailUrl + '4.jpg' }
   ];
 
   constructor() {}

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -8,4 +8,9 @@ import { Component, signal } from '@angular/core';
   styleUrl: './hero.scss',
 })
 export class Hero {
+  isScrollingDown = false;
+  @HostListener ('window:scroll', []) onWindowScroll() {
+    const currentScroll = window.scrollY;
+    this.isScrollingDown = currentScroll > 900;
+  }
 }
