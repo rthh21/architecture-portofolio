@@ -7,7 +7,7 @@ import { Project } from '../models/project';
 
 export class ProjectService {
   
-  private thumbnailUrl = '/home-project-tumbnails/project-';
+  private thumbnailUrl = 'home-project-tumbnails/project-';
   private projects: Project[] = [
     { id: 1, name: 'My Project', img: this.thumbnailUrl + '1.jpg'},
     { id: 2, name: 'My Project 2', img: this.thumbnailUrl + '2.jpg' },
