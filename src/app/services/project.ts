@@ -9,10 +9,10 @@ export class ProjectService {
   
   private thumbnailUrl = 'home-project-tumbnails/project-';
   private projects: Project[] = [
-    { id: 1, name: 'My Project', img: this.thumbnailUrl + '1.jpg'},
-    { id: 2, name: 'My Project 2', img: this.thumbnailUrl + '2.jpg' },
-    { id: 3, name: 'My Project 3', img: this.thumbnailUrl + '3.jpg' },
-    { id: 4, name: 'My Project 4', img: this.thumbnailUrl + '4.jpg' }
+    { id: 1, name: 'My Project', img: this.thumbnailUrl + '1.webp'},
+    { id: 2, name: 'My Project 2', img: this.thumbnailUrl + '2.webp' },
+    { id: 3, name: 'My Project 3', img: this.thumbnailUrl + '3.webp' },
+    { id: 4, name: 'My Project 4', img: this.thumbnailUrl + '4.webp' }
   ];
 
   constructor() {}
