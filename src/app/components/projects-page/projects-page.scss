@@ -6,13 +6,32 @@
 }
 
 .title-text {
-    margin: clamp(25px, 2.5vh, 40px);
+    margin: clamp(20px, 2vh, 40px);
     font-weight: 200;
-    font-size: 90px;
+    font-size: 60px;
+    display: inline-block;
+    position: relative; 
+}
+
+.title-text:after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    transition: width 0.8s ease;
+}
+
+.title-text:hover:after {
+    width: 100%;
 }
 
 .projects-wrapper{
     padding-top: 130px;
+        margin-left: 3vw; 
+    margin-right: 3vw;
 }
 
 ::ng-deep .project-grid {
