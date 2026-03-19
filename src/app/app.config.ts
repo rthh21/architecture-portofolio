@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { routes } from './app.routes';
 
@@ -9,7 +9,12 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideRouter(
       routes, 
-      withInMemoryScrolling({ scrollPositionRestoration: 'top' })
+      withInMemoryScrolling({ scrollPositionRestoration: 'top' },
+      )
+    ),
+    provideRouter(
+      routes,
+      withComponentInputBinding()
     )
   ]
 };

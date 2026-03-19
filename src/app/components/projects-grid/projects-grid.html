@@ -1,9 +1,10 @@
 <div class="project-grid">
   @for (project of myProjects; track project.id) {
-    <div class="project-card">
+    <div class="project-card" [routerLink]="['/projects', project.id]">
+    <!-- <div class="project-card" routerLink="/projects/{{project.id}}"> -->
       <img src={{project.img}}>
       <h3>{{ project.name }}</h3>   
-      <p>Center, Berlin</p>
+      <p>Center, Berlin</p> 
     </div>
   } @empty {
     <p class = "no-projects-card">No projects found!</p>

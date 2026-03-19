@@ -28,4 +28,8 @@ export class ProjectService {
   getProjectId(index: number, project: Project): number {
     return project.id;
   }
+  
+  getProjectById(id: number | null) : Project | undefined {
+    return this.projects.find(p => p.id === id);
+  }
 }
